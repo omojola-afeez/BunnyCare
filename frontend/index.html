@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BunnyCare Care Services – Caring Passionately for the Elderly</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#home">
+    <svg class="logo-icon" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="23" cy="23" r="23" fill="#E8F5EF"/>
+      <!-- Bunny ears -->
+      <ellipse cx="16" cy="11" rx="4.5" ry="9" fill="#3A8C6E"/>
+      <ellipse cx="16" cy="11" rx="2.5" ry="6.5" fill="#C2E0D0"/>
+      <ellipse cx="30" cy="11" rx="4.5" ry="9" fill="#3A8C6E"/>
+      <ellipse cx="30" cy="11" rx="2.5" ry="6.5" fill="#C2E0D0"/>
+      <!-- Bunny head -->
+      <circle cx="23" cy="26" r="12" fill="#3A8C6E"/>
+      <!-- Eyes -->
+      <circle cx="19" cy="24" r="2" fill="white"/>
+      <circle cx="27" cy="24" r="2" fill="white"/>
+      <circle cx="19.5" cy="24.5" r="0.9" fill="#1A4A3A"/>
+      <circle cx="27.5" cy="24.5" r="0.9" fill="#1A4A3A"/>
+      <!-- Nose -->
+      <ellipse cx="23" cy="28.5" rx="1.5" ry="1" fill="#C2E0D0"/>
+      <!-- Mouth -->
+      <path d="M21 30 Q23 32 25 30" stroke="#C2E0D0" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <!-- Cross/care symbol -->
+      <rect x="21.2" y="34" width="3.6" height="7" rx="1" fill="white" opacity="0.9"/>
+      <rect x="19" y="36.2" width="8" height="3.6" rx="1" fill="white" opacity="0.9"/>
+    </svg>
+    <div class="logo-text">
+      <span class="logo-name">BunnyCare</span>
+      <span class="logo-sub">Care Services</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#applications">Apply</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="#applications" class="nav-donate" onclick="openTab('donation')">❤ Donate</a>
+    <a href="#applications" class="nav-cta" onclick="openTab('enquiry')">Enquire Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-badge a1"><span>Nigeria's Trusted Elderly Care</span></div>
+    <h1 class="hero-title a2">Caring with <em>Warmth</em>,<br>Dignity &<br>Compassion</h1>
+    <p class="hero-desc a3">BunnyCare Care Services provides outstanding residential and nursing care for the elderly aged 60 and over. Our passionate team ensures every resident lives life to the fullest in a safe, loving home.</p>
+    <div class="hero-btns a4">
+      <a href="#services" class="btn-green">Our Care Plans</a>
+      <a href="#applications" class="btn-outline-green" onclick="openTab('visit')">Visit a Resident</a>
+    </div>
+    <div class="hero-stats a4">
+      <div><div class="stat-n">25+</div><div class="stat-l">Years of Care</div></div>
+      <div><div class="stat-n">320+</div><div class="stat-l">Residents Served</div></div>
+      <div><div class="stat-n">98%</div><div class="stat-l">Family Satisfaction</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80&fit=crop&crop=faces" alt="Nurse caring for elderly resident at BunnyCare" onerror="this.src='https://images.unsplash.com/photo-1576765607924-3f7b8410a787?w=900&q=80&fit=crop'">
+    <div class="hero-overlay"></div>
+    <div class="hero-card">
+      <div class="hero-card-quote">"We can't tell you when you'll need us — but we can tell you we are always here for you and your loved ones."</div>
+      <div class="hero-card-attr">— BunnyCare Care Philosophy</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-imgs">
+      <img class="about-img-main" src="https://images.unsplash.com/photo-1576765607924-3f7b8410a787?w=700&q=80&fit=crop&crop=faces" alt="Elderly residents at BunnyCare" onerror="this.style.background='#C2E0D0'">
+      <img class="about-img-accent" src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=450&q=80&fit=crop&crop=faces" alt="Carer with elderly resident" onerror="this.style.background='#3A8C6E'">
+      <div class="about-badge">
+        <div class="about-badge-n">60+</div>
+        <div class="about-badge-l">Age of Residents</div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-tag">Who We Are</div>
+      <h2 class="sec-title">A <em>Legacy</em> of Compassionate Elder Care</h2>
+      <p class="about-text">BunnyCare Care Services is a trusted provider of quality elderly care in Oyo State, Nigeria. Our beautiful dementia-friendly care home — Hope Villa — is nestled in Felele Rab, Ibadan, offering 10 fully furnished bedrooms with all the comforts of home, including a gazebo and a mini-farm with chickens, rabbits, ducks and goats.</p>
+      <p class="about-text" style="margin-top:-0.5rem">Our senior management team brings over 20 years of care experience, working in partnership with residents, families, social workers and multidisciplinary specialists.</p>
+      <ul class="about-list">
+        <li><div class="check"><svg viewBox="0 0 9 9"><path d="M1.5 4.5 L3.5 7 L7.5 2" stroke="#3A8C6E" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>Certified manager, resident nurse & qualified care assistants</li>
+        <li><div class="check"><svg viewBox="0 0 9 9"><path d="M1.5 4.5 L3.5 7 L7.5 2" stroke="#3A8C6E" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>24/7 uniformed security with CCTV — fully gated premises</li>
+        <li><div class="check"><svg viewBox="0 0 9 9"><path d="M1.5 4.5 L3.5 7 L7.5 2" stroke="#3A8C6E" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>Person-centred, dementia-friendly care environment</li>
+        <li><div class="check"><svg viewBox="0 0 9 9"><path d="M1.5 4.5 L3.5 7 L7.5 2" stroke="#3A8C6E" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>Mini-farm, therapy garden & recreational gazebo</li>
+        <li><div class="check"><svg viewBox="0 0 9 9"><path d="M1.5 4.5 L3.5 7 L7.5 2" stroke="#3A8C6E" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>Open family visits — all day, no appointments needed</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header">
+    <div>
+      <div class="sec-tag">Our Services</div>
+      <h2 class="sec-title">Care Plans for <em>Every Need</em></h2>
+    </div>
+    <p class="services-desc">From residential and day care to specialist dementia support, each of our care plans is tailored to the individual. All fees are reviewed regularly and support can be arranged for funding applications.</p>
+  </div>
+  <div class="services-grid">
+    <div class="scard">
+      <div class="scard-icon">🏡</div>
+      <div class="scard-name">Residential Care</div>
+      <p class="scard-desc">Warm, supported long-term accommodation with daily care assistance, meals, and a rich social programme.</p>
+      <div class="price-lbl">Starting from</div>
+      <div class="price-val">₦180,000 <span>/ month</span></div>
+      <ul class="scard-includes">
+        <li>All meals & refreshments</li><li>Daily personal care</li><li>Activities & outings</li><li>Housekeeping & laundry</li><li>24hr care team on call</li>
+      </ul>
+    </div>
+    <div class="scard" style="border-top:3px solid var(--gold)">
+      <div class="popular-badge">Most Popular</div>
+      <div class="scard-icon">🩺</div>
+      <div class="scard-name">Nursing Care</div>
+      <p class="scard-desc">Round-the-clock clinical care by qualified nurses, managing complex health conditions with compassion.</p>
+      <div class="price-lbl">Starting from</div>
+      <div class="price-val">₦280,000 <span>/ month</span></div>
+      <ul class="scard-includes">
+        <li>Resident nurse 24/7</li><li>Medication management</li><li>Clinical monitoring</li><li>Wound & specialist care</li><li>GP & specialist liaison</li>
+      </ul>
+    </div>
+    <div class="scard">
+      <div class="scard-icon">🧠</div>
+      <div class="scard-name">Dementia Care</div>
+      <p class="scard-desc">Specialist memory care in a secure, stimulating environment designed to reduce anxiety and support dignity.</p>
+      <div class="price-lbl">Starting from</div>
+      <div class="price-val">₦250,000 <span>/ month</span></div>
+      <ul class="scard-includes">
+        <li>Secure dementia-friendly unit</li><li>Specialist trained staff</li><li>Reminiscence therapy</li><li>Sensory activities</li><li>Family support sessions</li>
+      </ul>
+    </div>
+    <div class="scard">
+      <div class="scard-icon">☀️</div>
+      <div class="scard-name">Day Care</div>
+      <p class="scard-desc">Daytime social and health programmes for elders living at home — meals, activities and nursing check-ins.</p>
+      <div class="price-lbl">Starting from</div>
+      <div class="price-val">₦15,000 <span>/ day</span></div>
+      <ul class="scard-includes">
+        <li>Transport available</li><li>Hot meals & refreshments</li><li>Therapeutic activities</li><li>Nurse health check</li><li>Social & friendship building</li>
+      </ul>
+    </div>
+    <div class="scard">
+      <div class="scard-icon">🏠</div>
+      <div class="scard-name">Domiciliary Care</div>
+      <p class="scard-desc">Professional care delivered in the comfort of your loved one's own home, tailored to their daily schedule.</p>
+      <div class="price-lbl">Starting from</div>
+      <div class="price-val">₦8,000 <span>/ visit</span></div>
+      <ul class="scard-includes">
+        <li>Personal hygiene assistance</li><li>Medication reminders</li><li>Meal preparation</li><li>Companionship visits</li><li>Regular family updates</li>
+      </ul>
+    </div>
+    <div class="scard">
+      <div class="scard-icon">❤️</div>
+      <div class="scard-name">Respite Care</div>
+      <p class="scard-desc">Short-term stays providing relief for family caregivers, with the same high standard as our long-term care.</p>
+      <div class="price-lbl">Starting from</div>
+      <div class="price-val">₦200,000 <span>/ month</span></div>
+      <ul class="scard-includes">
+        <li>Minimum 2-week stay</li><li>Full residential standard</li><li>Social integration</li><li>Family carer support</li><li>Smooth transition planning</li>
+      </ul>
+    </div>
+  </div>
+  <div class="pricing-strip">
+    <div class="pricing-strip-text">All fees include <strong>accommodation, meals & personal care.</strong> No hidden charges.</div>
+    <p class="pricing-strip p">Fees are assessed following a needs assessment. We welcome self-funded and family-funded placements. Contact us to discuss your situation.</p>
+    <a href="#applications" class="btn-outline-green" onclick="openTab('enquiry')" style="white-space:nowrap;color:white;border-color:rgba(255,255,255,0.4)">Get a Quote</a>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="equipment" id="equipment">
+  <div class="sec-tag">Our Facilities</div>
+  <h2 class="sec-title">Modern Equipment & <em>Thoughtful</em> Spaces</h2>
+  <div class="equip-grid">
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&q=75&fit=crop" alt="Care beds" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">Profiling Care Beds</div>
+      <p class="ecard-desc">Adjustable hospital-grade beds with pressure-relief mattresses for comfort and care access.</p>
+    </div>
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=75&fit=crop" alt="Medical monitoring" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">Vital Signs Monitoring</div>
+      <p class="ecard-desc">24/7 health monitoring with nurse-call systems and fall detection throughout the home.</p>
+    </div>
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=75&fit=crop" alt="Physiotherapy" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">Therapy & Physio Room</div>
+      <p class="ecard-desc">On-site physiotherapy and occupational therapy spaces for mobility rehabilitation.</p>
+    </div>
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=75&fit=crop" alt="Accessible bathroom" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">Accessible Bathrooms</div>
+      <p class="ecard-desc">Fully accessible wet rooms with hoisting equipment, grab rails and anti-slip flooring.</p>
+    </div>
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=400&q=75&fit=crop" alt="Garden" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">Therapy Garden & Gazebo</div>
+      <p class="ecard-desc">Beautiful outdoor spaces including a gazebo and mini-farm with animals for resident wellbeing.</p>
+    </div>
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=400&q=75&fit=crop" alt="Dining room" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">Dining & Nutrition</div>
+      <p class="ecard-desc">Bright dining rooms serving freshly prepared nutritious meals tailored to dietary needs.</p>
+    </div>
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1574781431517-64d2b85b21f3?w=400&q=75&fit=crop" alt="CCTV security" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">24hr Security & CCTV</div>
+      <p class="ecard-desc">Fully gated premises with uniformed security personnel and CCTV monitoring round the clock.</p>
+    </div>
+    <div class="ecard">
+      <img class="ecard-img" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=75&fit=crop" alt="Digital records" onerror="this.style.background='#C2E0D0';this.style.height='140px'">
+      <div class="ecard-name">Digital Care Records</div>
+      <p class="ecard-desc">Electronic care planning with real-time records accessible by staff and families securely.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="sec-tag">Meet the Team</div>
+  <h2 class="sec-title">Our <em>Dedicated</em> Care Professionals</h2>
+  <div class="team-grid">
+    <div class="tcard">
+      <div class="tcard-photo">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80&fit=crop&crop=faces,top" alt="Resident Nurse Manager">
+      </div>
+      <div class="tcard-info">
+        <div class="tcard-name">Sister Amaka Okonkwo</div>
+        <div class="tcard-role">Resident Nurse Manager</div>
+        <p class="tcard-bio">Over 28 years in clinical nursing including specialist geriatric care. Amaka leads our nursing team with exceptional compassion and expertise.</p>
+        <div class="tcard-cert">RN · MSc Gerontology</div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-photo">
+        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&q=80&fit=crop&crop=faces,top" alt="Senior Care Coordinator">
+      </div>
+      <div class="tcard-info">
+        <div class="tcard-name">Mr. Chukwuemeka Adeyemi</div>
+        <div class="tcard-role">Senior Care Coordinator</div>
+        <p class="tcard-bio">15 years in elderly care coordination. Emeka ensures each resident's care plan is personal, up-to-date, and delivered with warmth.</p>
+        <div class="tcard-cert">NVQ L5 · First Aid Trainer</div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-photo">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&q=80&fit=crop&crop=faces,top" alt="Physiotherapist">
+      </div>
+      <div class="tcard-info">
+        <div class="tcard-name">Dr. Funke Adeleke</div>
+        <div class="tcard-role">Physiotherapist</div>
+        <p class="tcard-bio">Specialist in geriatric physiotherapy and mobility rehabilitation, helping residents maintain independence and strength every day.</p>
+        <div class="tcard-cert">BSc Physio · MCSP</div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-photo">
+        <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=500&q=80&fit=crop&crop=faces,top" alt="Activities Coordinator">
+      </div>
+      <div class="tcard-info">
+        <div class="tcard-name">Miss Blessing Nwosu</div>
+        <div class="tcard-role">Activities & Wellbeing Lead</div>
+        <p class="tcard-bio">Blessing brings joy and creativity to BunnyCare, organising programmes from art therapy to music sessions, farm visits and celebrations.</p>
+        <div class="tcard-cert">BA Occupational Therapy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS (Tabs: Enquiry, Assessment, Doctor's Appt, Resident Visit, Donation) -->
+<section class="applications" id="applications">
+  <div class="sec-tag">Applications & Requests</div>
+  <h2 class="sec-title">How Can We <em>Help</em> You?</h2>
+  <p class="apps-subtitle">Submit an enquiry, book an assessment, schedule a doctor's appointment, apply to visit a resident, or make a donation — all in one place.</p>
+
+  <div class="app-tabs">
+    <button class="app-tab active" onclick="openTab('enquiry')">💬 Care Enquiry</button>
+    <button class="app-tab" onclick="openTab('assessment')">📋 Care Assessment</button>
+    <button class="app-tab" onclick="openTab('doctor')">🩺 Doctor's Appointment</button>
+    <button class="app-tab" onclick="openTab('visit')">🏡 Resident Visit</button>
+    <button class="app-tab" onclick="openTab('donation')">❤️ Make a Donation</button>
+  </div>
+
+  <!-- ENQUIRY -->
+  <div class="app-panel active" id="panel-enquiry">
+    <div class="app-form-grid">
+      <div>
+        <div class="form-section-title">Submit a Care Enquiry</div>
+        <p class="form-section-desc">Tell us about your loved one's needs and we will get back to you within 24 hours with personalised information and next steps.</p>
+        <div class="form-fields">
+          <div class="frow">
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="e.g. Chioma Obi" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Your Relationship <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Your Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Self</option><option>Other</option></select></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
+            <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" placeholder="you@email.com" required aria-required="true" aria-label="Email Address"></div>
+          </div>
+          <div class="fgroup"><label>Resident's Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Name of the person needing care" required aria-required="true" aria-label="Resident Name"></div>
+          <div class="frow">
+            <div class="fgroup"><label>Resident's Age <span style="color:#e74c3c">*</span></label><input type="number" placeholder="e.g. 74" required data-ageCheck="true" aria-required="true" aria-label="Resident Age"></div>
+            <div class="fgroup"><label>Care Type Interested In <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Care Type"><option>Select care type...</option><option>Residential Care</option><option>Nursing Care</option><option>Dementia Care</option><option>Day Care</option><option>Domiciliary Care</option><option>Respite Care</option></select></div>
+          </div>
+          <div class="fgroup"><label>Brief Description of Needs <span style="color:#e74c3c">*</span></label><textarea placeholder="Please briefly describe the care needs, any medical conditions, and when care is needed..." required data-maxlength="500" aria-required="true" aria-label="Description of Needs"></textarea></div>
+          <button class="btn-submit">Send Enquiry →</button>
+        </div>
+      </div>
+      <div class="app-info-panel">
+        <div class="info-icon">💬</div>
+        <div class="info-title">What Happens Next?</div>
+        <ul class="info-list">
+          <li>Our admissions team reviews your enquiry within 24 hours</li>
+          <li>We call you to discuss your loved one's needs in detail</li>
+          <li>A free home or care home visit is arranged</li>
+          <li>A personalised care quote is prepared for you</li>
+          <li>We guide you through funding options (including government support)</li>
+        </ul>
+        <div class="info-note"><strong>Call us directly:</strong> 09125827403 / 08058884635 — our friendly team is available 7 days a week, 8am–8pm.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASSESSMENT -->
+  <div class="app-panel" id="panel-assessment">
+    <div class="app-form-grid">
+      <div>
+        <div class="form-section-title">Request a Care Assessment</div>
+        <p class="form-section-desc">A comprehensive care needs assessment is the first step. Our qualified assessor will evaluate your loved one's physical, emotional and social needs to create a tailored care plan.</p>
+        <div class="form-fields">
+          <div class="frow">
+            <div class="fgroup"><label>Applicant's Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Person needing assessment" required aria-required="true" aria-label="Applicant Full Name"></div>
+            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Contact Person <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Family contact name" required aria-required="true" aria-label="Contact Person Name"></div>
+            <div class="fgroup"><label>Relationship <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse</option><option>Sibling</option><option>Social Worker</option><option>Other</option></select></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
+            <div class="fgroup"><label>Contact Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="contact@email.com" required aria-required="true" aria-label="Contact Email"></div>
+          </div>
+          <div class="fgroup"><label>Current Living Situation <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Living Situation"><option>Select...</option><option>Living alone at home</option><option>Living with family</option><option>Currently in hospital</option><option>In another care facility</option></select></div>
+          <div class="fgroup"><label>Primary Health Conditions <span style="color:#e74c3c">*</span></label><textarea placeholder="e.g. Dementia, diabetes, limited mobility, post-stroke — list known health conditions..." required data-maxlength="500" aria-required="true" aria-label="Health Conditions"></textarea></div>
+          <div class="frow">
+            <div class="fgroup"><label>Preferred Assessment Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Assessment Date"></div>
+            <div class="fgroup"><label>Preferred Time <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Preferred Time"><option>Select...</option><option>Morning (8am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option></select></div>
+          </div>
+          <div class="fgroup"><label>Assessment Location <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Assessment Location"><option>Select...</option><option>At applicant's home</option><option>At BunnyCare Hope Villa</option><option>At hospital</option></select></div>
+          <button class="btn-submit">Request Assessment →</button>
+        </div>
+      </div>
+      <div class="app-info-panel">
+        <div class="info-icon">📋</div>
+        <div class="info-title">About Our Assessment</div>
+        <ul class="info-list">
+          <li>Conducted by our certified care manager or senior nurse</li>
+          <li>Covers physical health, mental health, mobility and daily living</li>
+          <li>Takes approximately 1–2 hours at a time convenient for you</li>
+          <li>Completely free of charge and without obligation</li>
+          <li>A detailed written care plan is provided within 5 working days</li>
+          <li>Assessment informs care type recommendation and fee estimate</li>
+        </ul>
+        <div class="info-note"><strong>Please bring:</strong> GP referral letter (if available), list of current medications, and any previous health assessments.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOCTOR'S APPOINTMENT -->
+  <div class="app-panel" id="panel-doctor">
+    <div class="app-form-grid">
+      <div>
+        <div class="form-section-title">Book a Doctor's Appointment</div>
+        <p class="form-section-desc">Schedule a medical consultation for a current resident or for a prospective resident prior to admission. Our visiting doctor holds regular clinics at Hope Villa.</p>
+        <div class="form-fields">
+          <div class="frow">
+            <div class="fgroup"><label>Resident's Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name of resident" required aria-required="true" aria-label="Resident Full Name"></div>
+            <div class="fgroup"><label>Room / Bed Number</label><input type="text" placeholder="e.g. Room 4 or Prospective" aria-label="Room Number"></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
+            <div class="fgroup"><label>Appointment Type <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Appointment Type"><option>Select...</option><option>Routine check-up</option><option>Medication review</option><option>New symptom consultation</option><option>Specialist referral</option><option>Pre-admission medical</option><option>Mental health review</option></select></div>
+          </div>
+          <div class="fgroup"><label>Reason for Appointment <span style="color:#e74c3c">*</span></label><textarea placeholder="Briefly describe the reason for this appointment and any symptoms..." required data-maxlength="300" aria-required="true" aria-label="Reason for Appointment"></textarea></div>
+          <div class="frow">
+            <div class="fgroup"><label>Preferred Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Date"></div>
+            <div class="fgroup"><label>Urgency Level <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Urgency Level"><option>Routine (within 2 weeks)</option><option>Soon (within 3–5 days)</option><option>Urgent (within 24–48hrs)</option></select></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Requested By <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Name of requester" required aria-required="true" aria-label="Requested By"></div>
+            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship to Resident"><option>Select...</option><option>Self (resident)</option><option>Family member</option><option>Care staff</option><option>Nurse</option></select></div>
+          </div>
+          <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
+          <button class="btn-submit">Book Appointment →</button>
+        </div>
+      </div>
+      <div class="app-info-panel">
+        <div class="info-icon">🩺</div>
+        <div class="info-title">Our Medical Support</div>
+        <ul class="info-list">
+          <li>Visiting GP holds clinics at Hope Villa twice weekly</li>
+          <li>Resident nurse coordinates all appointments and records</li>
+          <li>Specialist referrals facilitated to hospitals in Ibadan</li>
+          <li>Medication reviews conducted monthly for all residents</li>
+          <li>Emergency medical referrals actioned within hours</li>
+          <li>Family members informed of all medical updates</li>
+        </ul>
+        <div class="info-note"><strong>Medical emergencies:</strong> Contact our nurses directly on 0814 636 0636. For life-threatening emergencies, call the nearest hospital immediately.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESIDENT VISIT -->
+  <div class="app-panel" id="panel-visit">
+    <div class="app-form-grid">
+      <div>
+        <div class="form-section-title">Apply to Visit a Resident</div>
+        <p class="form-section-desc">Family are always welcome at BunnyCare. While no appointment is generally needed, filling in this form helps us prepare a warm welcome and ensure mealtimes are respected.</p>
+        <div class="form-fields">
+          <div class="frow">
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Visitor's full name" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Grandchild</option><option>Friend</option><option>Other</option></select></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Your Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Your Phone"></div>
+            <div class="fgroup"><label>Your Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="you@email.com" required aria-required="true" aria-label="Your Email"></div>
+          </div>
+          <div class="fgroup"><label>Resident You Are Visiting <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name of the resident" required aria-required="true" aria-label="Resident Name"></div>
+          <div class="frow">
+            <div class="fgroup"><label>Proposed Visit Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Proposed Visit Date"></div>
+            <div class="fgroup"><label>Arrival Time <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Arrival Time"><option>Select...</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Number of Visitors <span style="color:#e74c3c">*</span></label><input type="number" placeholder="e.g. 3" min="1" max="10" required aria-required="true" aria-label="Number of Visitors"></div>
+            <div class="fgroup"><label>Visit Duration <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Visit Duration"><option>1 hour</option><option>2 hours</option><option>3 hours</option><option>Half day</option><option>Full day outing</option></select></div>
+          </div>
+          <div class="fgroup"><label>Special Requests or Notes</label><textarea placeholder="e.g. bringing birthday cake, requesting a private room, bringing children, any special needs..." data-maxlength="300" aria-label="Special Requests"></textarea></div>
+          <button class="btn-submit">Submit Visit Request →</button>
+        </div>
+      </div>
+      <div class="app-info-panel">
+        <div class="info-icon">🏡</div>
+        <div class="info-title">Visiting Guidelines</div>
+        <ul class="info-list">
+          <li>Visits are welcome any day between 9am – 6pm</li>
+          <li>Please avoid mealtimes: 8–9am, 1–2pm, and 6–7pm</li>
+          <li>All visitors must sign in at the reception on arrival</li>
+          <li>Children are welcome and bring great joy to our residents</li>
+          <li>Day outings can be arranged with 48hrs notice</li>
+          <li>Overnight stays are not permitted within the facility</li>
+        </ul>
+        <div class="info-note"><strong>First time visiting?</strong> Please bring a valid ID. Our staff will give you a warm welcome tour of the home and introduce you to our care team.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DONATION -->
+  <div class="app-panel" id="panel-donation">
+    <div class="donation-grid">
+      <div>
+        <div class="form-section-title">Make a Donation</div>
+        <p class="form-section-desc">Your generous donation helps us fund activities, specialist equipment, therapy programmes, and special celebrations for our residents. Every contribution makes a meaningful difference.</p>
+        <div class="form-fields">
+          <div>
+            <label style="font-size:0.67rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-bottom:0.6rem">Select Donation Amount</label>
+            <div class="donation-amounts">
+              <div class="d-amount" onclick="selectAmount(this, '₦5,000')">₦5,000<span>Treats for residents</span></div>
+              <div class="d-amount" onclick="selectAmount(this, '₦10,000')">₦10,000<span>Activity supplies</span></div>
+              <div class="d-amount" onclick="selectAmount(this, '₦25,000')">₦25,000<span>Therapy session</span></div>
+              <div class="d-amount" onclick="selectAmount(this, '₦50,000')">₦50,000<span>Medical equipment</span></div>
+              <div class="d-amount" onclick="selectAmount(this, '₦100,000')">₦100,000<span>Specialist care fund</span></div>
+              <div class="d-amount" onclick="selectAmount(this, 'custom')" id="custom-btn">Custom Amount</div>
+            </div>
+          </div>
+          <div class="fgroup" id="custom-input" style="display:none"><label>Enter Custom Amount (₦)</label><input type="number" placeholder="Enter amount in Naira" id="custom-amount-input"></div>
+          <div class="frow">
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
+          </div>
+          <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
+          <div class="fgroup"><label>Donation Purpose</label><select aria-label="Donation Purpose"><option>General care fund</option><option>Activities & events</option><option>Medical equipment</option><option>Dementia care programme</option><option>Therapy & rehabilitation</option><option>Staff training</option><option>Where needed most</option></select></div>
+          <div class="fgroup"><label>Personal Message (Optional)</label><textarea placeholder="Leave an encouraging message for our residents and team..." data-maxlength="300" aria-label="Personal Message"></textarea></div>
+          <div class="fgroup" style="flex-direction:row;align-items:center;gap:10px">
+            <input type="checkbox" id="anon" style="width:auto;margin:0">
+            <label for="anon" style="text-transform:none;letter-spacing:0;font-size:0.83rem;color:rgba(255,255,255,0.5);margin:0">Make my donation anonymous</label>
+          </div>
+          <button class="btn-submit">Proceed to Payment →</button>
+        </div>
+      </div>
+      <div>
+        <div class="app-info-panel" style="margin-bottom:1.5rem">
+          <div class="info-icon">❤️</div>
+          <div class="info-title">Why Donate?</div>
+          <ul class="info-list">
+            <li>Fund special events: birthdays, holidays and celebrations</li>
+            <li>Support our therapy garden and mini-farm upkeep</li>
+            <li>Sponsor specialist dementia care equipment</li>
+            <li>Help fund staff training and certification</li>
+            <li>Provide comfort items for residents with no family</li>
+          </ul>
+          <div class="info-note"><strong>Bank Transfer:</strong> Account Name: BunnyCare Care Services Ltd · Bank: First Bank Nigeria · Account No: 3012345678. Please use your name as reference.</div>
+        </div>
+        <div class="app-info-panel">
+          <div class="info-title" style="font-size:0.9rem;margin-bottom:0.6rem">🌟 Donor Recognition</div>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.7">All donors above ₦50,000 receive a personalised certificate of appreciation and are featured in our annual donor honour roll. Your generosity will be remembered by the residents and families you support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="sec-tag">Families Say</div>
+  <h2 class="sec-title">Words from Those <em>We Serve</em></h2>
+  <div class="testi-grid">
+    <div class="tcard-testi">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-q">"Moving my mother to BunnyCare was the best decision our family made. The nurses treat her like their own. Her health and mood have improved remarkably."</p>
+      <div class="testi-author">
+        <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&fit=crop&crop=faces" alt="James"></div>
+        <div><div class="testi-name">Mr. James Adeyinka</div><div class="testi-rel">Son of resident · 2 years</div></div>
+      </div>
+    </div>
+    <div class="tcard-testi">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-q">"The dementia care at BunnyCare is outstanding. The staff understand Mama's needs intuitively. Her anxiety has reduced and she smiles every day now."</p>
+      <div class="testi-author">
+        <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&q=80&fit=crop&crop=faces" alt="Angela"></div>
+        <div><div class="testi-name">Mrs. Angela Whitfield</div><div class="testi-rel">Daughter of resident · 18 months</div></div>
+      </div>
+    </div>
+    <div class="tcard-testi">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-q">"Papa received the most dignified, loving care here. Sister Amaka and the whole team were remarkable. Our family will be forever grateful to BunnyCare."</p>
+      <div class="testi-author">
+        <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80&fit=crop&crop=faces" alt="Thomas"></div>
+        <div><div class="testi-name">Mr. Thomas Kalu</div><div class="testi-rel">Bereaved family member</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="sec-tag">Contact Us</div>
+  <h2 class="sec-title">Get in Touch — We're <em>Here for You</em></h2>
+  <div class="contact-grid">
+    <div class="contact-form">
+      <p style="font-size:0.9rem;color:var(--text);line-height:1.8;margin-bottom:1.5rem;font-weight:300">Our admissions and care team is available 7 days a week. We are here to answer your questions, arrange visits, and help you make the right decision for your loved one — with no pressure.</p>
+      <div class="cf-row">
+        <div class="cf-group"><label>Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Your name" required aria-required="true" aria-label="Your Full Name"></div>
+        <div class="cf-group"><label>Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
+      </div>
+      <div class="cf-group"><label>Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
+      <div class="cf-group"><label>Subject <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Subject"><option>General enquiry</option><option>Care placement enquiry</option><option>Arrange a visit</option><option>Book an assessment</option><option>Feedback / complaint</option><option>Recruitment</option><option>Donation</option></select></div>
+      <div class="cf-group"><label>Message <span style="color:#e74c3c">*</span></label><textarea placeholder="How can we help you?" required data-maxlength="500" aria-required="true" aria-label="Your Message"></textarea></div>
+      <button class="btn-green" style="width:100%;padding:15px">Send Message →</button>
+    </div>
+    <div class="contact-info">
+      <div class="ci-item">
+        <div class="ci-icon">📞</div>
+        <div><div class="ci-label">Telephone</div><div class="ci-val">09125827403 / 08058884635</div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon">✉️</div>
+        <div><div class="ci-label">Email</div><div class="ci-val">omojolaabdulafeez@yahoo.com</div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon">📍</div>
+        <div><div class="ci-label">Address</div><div class="ci-val">Alamutu, Lagos</div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon">🕐</div>
+        <div><div class="ci-label">Office Hours</div><div class="ci-val">Mon – Sun: 8:00 AM – 8:00 PM</div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon">🐰</div>
+        <div><div class="ci-label">Visiting Hours</div><div class="ci-val">Daily 9:00 AM – 6:00 PM (avoiding mealtimes)</div></div>
+      </div>
+      <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap">
+        <a href="#" style="background:var(--mint);color:var(--green-dark);padding:10px 16px;border-radius:4px;font-size:0.78rem;font-weight:600;text-decoration:none">Facebook</a>
+        <a href="#" style="background:var(--mint);color:var(--green-dark);padding:10px 16px;border-radius:4px;font-size:0.78rem;font-weight:600;text-decoration:none">Instagram</a>
+        <a href="#" style="background:var(--mint);color:var(--green-dark);padding:10px 16px;border-radius:4px;font-size:0.78rem;font-weight:600;text-decoration:none">WhatsApp</a>
+        <a href="#" style="background:var(--mint);color:var(--green-dark);padding:10px 16px;border-radius:4px;font-size:0.78rem;font-weight:600;text-decoration:none">YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo-wrap">
+        <svg width="36" height="36" viewBox="0 0 46 46" fill="none">
+          <circle cx="23" cy="23" r="23" fill="#2A6B54"/>
+          <ellipse cx="16" cy="11" rx="4.5" ry="9" fill="#C2E0D0"/>
+          <ellipse cx="16" cy="11" rx="2.5" ry="6.5" fill="#3A8C6E"/>
+          <ellipse cx="30" cy="11" rx="4.5" ry="9" fill="#C2E0D0"/>
+          <ellipse cx="30" cy="11" rx="2.5" ry="6.5" fill="#3A8C6E"/>
+          <circle cx="23" cy="26" r="12" fill="#C2E0D0"/>
+          <circle cx="19" cy="24" r="1.8" fill="#1A4A3A"/>
+          <circle cx="27" cy="24" r="1.8" fill="#1A4A3A"/>
+          <ellipse cx="23" cy="28.5" rx="1.5" ry="1" fill="#2A6B54"/>
+          <path d="M21 30 Q23 32 25 30" stroke="#2A6B54" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <rect x="21.2" y="34" width="3.6" height="7" rx="1" fill="white" opacity="0.9"/>
+          <rect x="19" y="36.2" width="8" height="3.6" rx="1" fill="white" opacity="0.9"/>
+        </svg>
+        <div class="footer-logo-name">Bunny<span>Care</span></div>
+      </div>
+      <p class="footer-tagline">Caring passionately for the elderly aged 60 years and over in Lagos. Contact: Alamutu, Lagos.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Care Services</div>
+      <ul class="footer-links">
+        <li><a href="#">Residential Care</a></li>
+        <li><a href="#">Nursing Care</a></li>
+        <li><a href="#">Dementia Care</a></li>
+        <li><a href="#">Day Care</a></li>
+        <li><a href="#">Domiciliary Care</a></li>
+        <li><a href="#">Respite Care</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Applications</div>
+      <ul class="footer-links">
+        <li><a href="#applications" onclick="openTab('enquiry')">Care Enquiry</a></li>
+        <li><a href="#applications" onclick="openTab('assessment')">Care Assessment</a></li>
+        <li><a href="#applications" onclick="openTab('doctor')">Doctor's Appointment</a></li>
+        <li><a href="#applications" onclick="openTab('visit')">Resident Visit</a></li>
+        <li><a href="#applications" onclick="openTab('donation')">Make a Donation</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links">
+        <li><a href="#">About Us & Philosophy</a></li>
+        <li><a href="#">Meet the Team</a></li>
+        <li><a href="#">Living With Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2024 BunnyCare Care Services Ltd · Alamutu, Lagos. Tel: 09125827403 / 08058884635</p>
+    <div class="footer-badges">
+      <div class="fbadge">CQC Certified</div>
+      <div class="fbadge">NCC Registered</div>
+      <div class="fbadge">ISO 9001</div>
+    </div>
+  </div>
+</footer>
+
+<script src="form-handler.js"></script>
+<script>
+function openTab(name) {
+  // Update tabs
+  document.querySelectorAll('.app-tab').forEach((t,i) => {
+    const names = ['enquiry','assessment','doctor','visit','donation'];
+    t.classList.toggle('active', names[i] === name);
+  });
+  // Update panels
+  document.querySelectorAll('.app-panel').forEach(p => {
+    p.classList.toggle('active', p.id === 'panel-' + name);
+  });
+  // Scroll to applications section
+  document.getElementById('applications').scrollIntoView({behavior:'smooth', block:'start'});
+  
+  // Reinitialize form handlers for this panel
+  setTimeout(() => {
+    if (FormHandler && FormHandler.setupAllForms) {
+      FormHandler.setupAllForms();
+    }
+  }, 100);
+}
+
+function selectAmount(el, val) {
+  document.querySelectorAll('.d-amount').forEach(d => d.classList.remove('selected'));
+  el.classList.add('selected');
+  const customInput = document.getElementById('custom-input');
+  customInput.style.display = val === 'custom' ? 'flex' : 'none';
+}
+
+// Smooth nav link behaviour
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+  });
+});
+
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  nav.style.boxShadow = window.scrollY > 20 ? '0 4px 24px rgba(26,74,58,0.08)' : 'none';
+});
+</script>
+</body>
+</html>
