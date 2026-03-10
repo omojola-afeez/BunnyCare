@@ -5,264 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BunnyCare Care Services – Caring Passionately for the Elderly</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --mint: #E8F5EF;
-  --mint-mid: #C2E0D0;
-  --green: #3A8C6E;
-  --green-dark: #2A6B54;
-  --green-deep: #1A4A3A;
-  --gold: #D4A756;
-  --gold-light: #F0DFB8;
-  --cream: #FDFAF5;
-  --warm: #FBF6EE;
-  --charcoal: #1E2A26;
-  --text: #3A4A42;
-  --text-light: #7A8A82;
-  --border: rgba(58,140,110,0.15);
-  --shadow: rgba(26,74,58,0.1);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden}
-
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;width:100%;z-index:200;
-  background:rgba(253,250,245,0.96);backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--border);
-  padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:74px;
-}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo-icon{width:46px;height:46px;flex-shrink:0}
-.logo-text{display:flex;flex-direction:column;line-height:1}
-.logo-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--green-dark)}
-.logo-sub{font-size:0.6rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light)}
-.nav-links{display:flex;gap:2rem;list-style:none}
-.nav-links a{font-size:0.78rem;font-weight:500;letter-spacing:0.06em;text-decoration:none;color:var(--text);transition:color 0.3s}
-.nav-links a:hover{color:var(--green)}
-.nav-actions{display:flex;gap:0.75rem;align-items:center}
-.nav-donate{background:var(--gold);color:white;border:none;padding:9px 20px;font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border-radius:3px;transition:background 0.3s;text-decoration:none}
-.nav-donate:hover{background:var(--gold-dark,#b8893a)}
-.nav-cta{background:var(--green);color:white;border:none;padding:9px 20px;font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border-radius:3px;transition:background 0.3s;text-decoration:none}
-.nav-cta:hover{background:var(--green-dark)}
-
-/* ── HERO ── */
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:74px}
-.hero-left{display:flex;flex-direction:column;justify-content:center;padding:7% 6% 7% 7%;background:var(--warm)}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--mint);border:1px solid var(--mint-mid);padding:6px 14px;border-radius:40px;margin-bottom:2rem;width:fit-content}
-.hero-badge span{font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--green-dark)}
-.hero-badge::before{content:'🐰';font-size:0.9rem}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,4.5vw,5rem);font-weight:700;line-height:1.1;color:var(--charcoal);margin-bottom:1.5rem}
-.hero-title em{font-style:italic;color:var(--green)}
-.hero-desc{font-size:1rem;font-weight:300;line-height:1.85;color:var(--text);max-width:430px;margin-bottom:2.5rem}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
-.btn-green{background:var(--green);color:white;padding:14px 30px;border:none;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border-radius:4px;transition:all 0.3s;text-decoration:none;display:inline-block}
-.btn-green:hover{background:var(--green-dark);transform:translateY(-2px)}
-.btn-outline-green{border:2px solid var(--green);color:var(--green);background:transparent;padding:12px 28px;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border-radius:4px;transition:all 0.3s;text-decoration:none;display:inline-block}
-.btn-outline-green:hover{background:var(--green);color:white}
-.hero-stats{display:flex;gap:2rem;padding-top:2rem;border-top:1px solid var(--border)}
-.stat-n{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--green)}
-.stat-l{font-size:0.7rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-light);margin-top:2px}
-
-.hero-right{position:relative;overflow:hidden}
-.hero-img{width:100%;height:100%;object-fit:cover;display:block}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,74,58,0.6) 0%,transparent 50%)}
-.hero-card{position:absolute;bottom:2rem;left:2rem;right:2rem;background:rgba(253,250,245,0.95);backdrop-filter:blur(8px);padding:1.5rem 2rem;border-left:4px solid var(--green);border-radius:2px}
-.hero-card-quote{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--charcoal);line-height:1.6}
-.hero-card-attr{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-light);margin-top:0.5rem}
-
-/* ── SECTIONS ── */
-section{padding:5.5rem 7%}
-.sec-tag{font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px;margin-bottom:0.8rem}
-.sec-tag::before{content:'';display:block;width:28px;height:2px;background:var(--green)}
-.sec-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,3vw,3rem);font-weight:700;line-height:1.2;color:var(--charcoal)}
-.sec-title em{font-style:italic;color:var(--green)}
-
-/* ── ABOUT ── */
-.about{background:var(--warm)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-.about-imgs{position:relative;height:540px}
-.about-img-main{position:absolute;top:0;left:0;width:72%;height:85%;object-fit:cover;border-radius:4px;box-shadow:0 20px 50px var(--shadow)}
-.about-img-accent{position:absolute;bottom:0;right:0;width:50%;height:55%;object-fit:cover;border-radius:4px;border:5px solid var(--warm);box-shadow:0 10px 30px var(--shadow)}
-.about-badge{position:absolute;top:45%;left:60%;background:var(--green);color:white;padding:1rem 1.2rem;border-radius:3px;text-align:center;box-shadow:0 8px 24px var(--shadow)}
-.about-badge-n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700}
-.about-badge-l{font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:2px;opacity:0.85}
-.about-text{font-size:0.95rem;line-height:1.9;color:var(--text);font-weight:300;margin:1.5rem 0}
-.about-list{list-style:none;margin-top:1rem}
-.about-list li{display:flex;gap:10px;align-items:flex-start;padding:0.7rem 0;border-bottom:1px solid var(--border);font-size:0.88rem;color:var(--text)}
-.about-list li:last-child{border-bottom:none}
-.check{width:18px;height:18px;background:var(--mint);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.check svg{width:9px;height:9px}
-
-/* ── SERVICES ── */
-.services{background:var(--cream)}
-.services-header{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:end;margin-bottom:3.5rem}
-.services-desc{font-size:0.95rem;line-height:1.85;color:var(--text);font-weight:300}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.scard{background:var(--warm);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s;cursor:pointer}
-.scard::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform 0.4s}
-.scard:hover::before{transform:scaleX(1)}
-.scard:hover{transform:translateY(-5px);box-shadow:0 18px 48px var(--shadow)}
-.scard-icon{width:52px;height:52px;background:var(--mint);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:1.5rem}
-.scard-name{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:600;color:var(--charcoal);margin-bottom:0.6rem}
-.scard-desc{font-size:0.83rem;line-height:1.8;color:var(--text);margin-bottom:1.5rem;font-weight:300}
-.price-lbl{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-light);margin-bottom:2px}
-.price-val{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:600;color:var(--green)}
-.price-val span{font-size:0.82rem;color:var(--text-light);font-family:'DM Sans',sans-serif;font-weight:400}
-.scard-includes{margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--border);list-style:none}
-.scard-includes li{font-size:0.77rem;color:var(--text);padding:0.28rem 0;display:flex;gap:8px;align-items:center}
-.scard-includes li::before{content:'';display:block;width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0}
-.popular-badge{position:absolute;top:1.5rem;right:1.5rem;background:var(--gold);color:white;font-size:0.6rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px}
-.pricing-strip{background:var(--green-deep);padding:2.5rem 3.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:2px;border-radius:0 0 4px 4px}
-.pricing-strip-text{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:400;color:white;font-style:italic}
-.pricing-strip-text strong{font-style:normal;color:var(--gold-light)}
-.pricing-strip p{font-size:0.8rem;color:rgba(255,255,255,0.55);max-width:380px;line-height:1.7}
-
-/* ── TEAM ── */
-.team{background:var(--warm)}
-.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
-.tcard{background:var(--cream);border-radius:4px;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s}
-.tcard:hover{transform:translateY(-6px);box-shadow:0 20px 50px var(--shadow)}
-.tcard-photo{aspect-ratio:3/4;overflow:hidden;position:relative}
-.tcard-photo img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 0.5s}
-.tcard:hover .tcard-photo img{transform:scale(1.04)}
-.tcard-info{padding:1.4rem}
-.tcard-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;color:var(--charcoal)}
-.tcard-role{font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);margin-top:2px}
-.tcard-bio{font-size:0.77rem;color:var(--text);line-height:1.75;margin-top:0.6rem;font-weight:300}
-.tcard-cert{display:inline-block;background:var(--mint);color:var(--green-dark);font-size:0.63rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-top:0.7rem}
-
-/* ── EQUIPMENT ── */
-.equipment{background:var(--cream)}
-.equip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
-.ecard{background:var(--warm);padding:2rem 1.5rem;text-align:center;border-radius:4px;transition:background 0.3s,transform 0.3s}
-.ecard:hover{background:var(--mint);transform:translateY(-4px)}
-.ecard-img{width:100%;height:140px;object-fit:cover;border-radius:4px;margin-bottom:1.2rem}
-.ecard-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--charcoal);margin-bottom:0.4rem}
-.ecard-desc{font-size:0.77rem;color:var(--text-light);line-height:1.7;font-weight:300}
-
-/* ── APPLICATIONS ── */
-.applications{background:var(--green-deep)}
-.applications .sec-tag{color:var(--gold-light)}
-.applications .sec-tag::before{background:var(--gold-light)}
-.applications .sec-title{color:white}
-.apps-subtitle{font-size:0.95rem;color:rgba(255,255,255,0.6);line-height:1.8;max-width:550px;margin:1rem 0 3rem;font-weight:300}
-
-/* Tab system */
-.app-tabs{display:flex;gap:0;margin-bottom:2rem;border-bottom:2px solid rgba(255,255,255,0.1);overflow-x:auto}
-.app-tab{background:none;border:none;padding:14px 22px;font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.45);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;transition:all 0.3s}
-.app-tab.active{color:var(--gold-light);border-bottom-color:var(--gold)}
-.app-tab:hover{color:rgba(255,255,255,0.8)}
-.app-panel{display:none}
-.app-panel.active{display:block}
-.app-form-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}
-.form-section-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:600;color:white;margin-bottom:0.5rem}
-.form-section-desc{font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:2rem;font-weight:300}
-.form-fields{display:flex;flex-direction:column;gap:1rem}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.fgroup{display:flex;flex-direction:column;gap:0.4rem}
-.fgroup label{font-size:0.67rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45)}
-.fgroup input,.fgroup select,.fgroup textarea{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);padding:12px 14px;font-family:'DM Sans',sans-serif;font-size:0.87rem;color:white;border-radius:3px;outline:none;transition:border-color 0.3s}
-.fgroup input::placeholder,.fgroup textarea::placeholder{color:rgba(255,255,255,0.3)}
-.fgroup input:focus,.fgroup select:focus,.fgroup textarea:focus{border-color:var(--gold);background:rgba(255,255,255,0.1)}
-.fgroup select option{background:var(--green-deep);color:white}
-.fgroup textarea{resize:vertical;min-height:90px}
-.btn-submit{background:var(--gold);color:white;border:none;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:4px;transition:all 0.3s;width:100%;margin-top:0.5rem}
-.btn-submit:hover{background:#b8893a;transform:translateY(-2px)}
-.app-info-panel{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:2rem}
-.info-icon{font-size:2.2rem;margin-bottom:1rem}
-.info-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:white;margin-bottom:0.8rem}
-.info-list{list-style:none}
-.info-list li{padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:0.82rem;color:rgba(255,255,255,0.6);display:flex;gap:10px;align-items:flex-start;line-height:1.6}
-.info-list li:last-child{border-bottom:none}
-.info-list li::before{content:'→';color:var(--gold);flex-shrink:0;margin-top:1px}
-.info-note{background:rgba(212,167,86,0.12);border:1px solid rgba(212,167,86,0.25);border-radius:3px;padding:1rem 1.2rem;margin-top:1.2rem;font-size:0.8rem;color:rgba(255,255,255,0.6);line-height:1.7}
-.info-note strong{color:var(--gold-light)}
-
-/* Donation special layout */
-.donation-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:4rem}
-.donation-amounts{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-bottom:1.5rem}
-.d-amount{background:rgba(255,255,255,0.07);border:2px solid rgba(255,255,255,0.12);padding:14px;text-align:center;border-radius:4px;cursor:pointer;transition:all 0.3s;font-size:1.1rem;font-family:'Playfair Display',serif;font-weight:700;color:white}
-.d-amount:hover,.d-amount.selected{background:rgba(212,167,86,0.2);border-color:var(--gold);color:var(--gold-light)}
-.d-amount span{display:block;font-size:0.62rem;font-family:'DM Sans',sans-serif;font-weight:400;color:rgba(255,255,255,0.4);margin-top:3px}
-
-/* ── TESTIMONIALS ── */
-.testimonials{background:var(--cream)}
-.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.tcard-testi{background:var(--warm);padding:2rem;border-radius:4px;border-top:3px solid var(--green)}
-.testi-stars{color:var(--gold);font-size:0.9rem;letter-spacing:2px;margin-bottom:1rem}
-.testi-q{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;font-weight:400;color:var(--charcoal);line-height:1.8;margin-bottom:1.5rem}
-.testi-author{display:flex;align-items:center;gap:12px}
-.testi-avatar{width:42px;height:42px;border-radius:50%;overflow:hidden;flex-shrink:0}
-.testi-avatar img{width:100%;height:100%;object-fit:cover}
-.testi-name{font-size:0.82rem;font-weight:600;color:var(--charcoal)}
-.testi-rel{font-size:0.7rem;color:var(--text-light);margin-top:1px}
-
-/* ── CONTACT ── */
-.contact{background:var(--warm)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:3rem}
-.contact-form{display:flex;flex-direction:column;gap:1rem}
-.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.cf-group{display:flex;flex-direction:column;gap:0.4rem}
-.cf-group label{font-size:0.67rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-light)}
-.cf-group input,.cf-group select,.cf-group textarea{background:var(--cream);border:1px solid var(--border);padding:12px 14px;font-family:'DM Sans',sans-serif;font-size:0.87rem;color:var(--charcoal);border-radius:3px;outline:none;transition:border-color 0.3s}
-.cf-group input:focus,.cf-group select:focus,.cf-group textarea:focus{border-color:var(--green)}
-.cf-group textarea{resize:vertical;min-height:100px}
-.contact-info{}
-.ci-item{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--border)}
-.ci-item:last-child{border-bottom:none}
-.ci-icon{width:42px;height:42px;background:var(--mint);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
-.ci-label{font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-light);margin-bottom:2px}
-.ci-val{font-size:0.9rem;color:var(--charcoal);font-weight:500}
-
-/* ── FOOTER ── */
-footer{background:var(--charcoal);padding:4rem 7% 2rem}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07)}
-.footer-logo-wrap{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
-.footer-logo-name{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:white}
-.footer-logo-name span{color:var(--mint-mid)}
-.footer-tagline{font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.8;max-width:260px}
-.footer-col-title{font-size:0.66rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--mint-mid);margin-bottom:1.2rem}
-.footer-links{list-style:none}
-.footer-links li{padding:0.32rem 0}
-.footer-links a{font-size:0.82rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.3s}
-.footer-links a:hover{color:white}
-.footer-bottom{padding-top:2rem;display:flex;justify-content:space-between;align-items:center}
-.footer-copy{font-size:0.73rem;color:rgba(255,255,255,0.28)}
-.footer-badges{display:flex;gap:0.6rem}
-.fbadge{border:1px solid rgba(255,255,255,0.1);padding:5px 12px;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);border-radius:3px}
-
-/* Modal */
-.modal-bg{display:none;position:fixed;inset:0;background:rgba(26,74,58,0.7);z-index:1000;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
-.modal-bg.open{display:flex}
-.modal{background:var(--warm);width:min(560px,92vw);border-radius:6px;overflow:hidden;position:relative;max-height:90vh;overflow-y:auto}
-.modal-header{background:var(--green-deep);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between}
-.modal-title{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:white}
-.modal-close{background:none;border:none;color:rgba(255,255,255,0.6);font-size:1.5rem;cursor:pointer;line-height:1}
-.modal-body{padding:2.5rem}
-.modal-body .fgroup label{color:var(--text-light)}
-.modal-body .fgroup input,.modal-body .fgroup select,.modal-body .fgroup textarea{background:var(--cream);border:1px solid var(--border);color:var(--charcoal)}
-.modal-body .fgroup input::placeholder{color:var(--text-light)}
-.modal-body .fgroup input:focus,.modal-body .fgroup select:focus,.modal-body .fgroup textarea:focus{border-color:var(--green)}
-.modal-body .fgroup select option{background:white;color:var(--charcoal)}
-.modal-btn{background:var(--green);color:white;border:none;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:4px;transition:all 0.3s;width:100%;margin-top:0.5rem}
-.modal-btn:hover{background:var(--green-dark)}
-
-/* Animations */
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-.a1{animation:fadeUp 0.8s ease both}
-.a2{animation:fadeUp 0.8s 0.15s ease both}
-.a3{animation:fadeUp 0.8s 0.3s ease both}
-.a4{animation:fadeUp 0.8s 0.45s ease both}
-
-@media(max-width:900px){
-  .hero,.about-grid,.services-header,.contact-grid,.app-form-grid,.donation-grid{grid-template-columns:1fr}
-  .services-grid,.team-grid,.equip-grid,.testi-grid{grid-template-columns:repeat(2,1fr)}
-  .hero-right{height:50vh}
-  .footer-grid{grid-template-columns:1fr 1fr}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -563,19 +306,19 @@ footer{background:var(--charcoal);padding:4rem 7% 2rem}
         <p class="form-section-desc">Tell us about your loved one's needs and we will get back to you within 24 hours with personalised information and next steps.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Your Full Name</label><input type="text" placeholder="e.g. Chioma Obi"></div>
-            <div class="fgroup"><label>Your Relationship</label><select><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Self</option><option>Other</option></select></div>
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="e.g. Chioma Obi" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Your Relationship <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Your Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Self</option><option>Other</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Phone Number</label><input type="tel" placeholder="+234 800 000 0000"></div>
-            <div class="fgroup"><label>Email Address</label><input type="email" placeholder="you@email.com"></div>
+            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
+            <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" placeholder="you@email.com" required aria-required="true" aria-label="Email Address"></div>
           </div>
-          <div class="fgroup"><label>Resident's Name</label><input type="text" placeholder="Name of the person needing care"></div>
+          <div class="fgroup"><label>Resident's Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Name of the person needing care" required aria-required="true" aria-label="Resident Name"></div>
           <div class="frow">
-            <div class="fgroup"><label>Resident's Age</label><input type="number" placeholder="e.g. 74"></div>
-            <div class="fgroup"><label>Care Type Interested In</label><select><option>Select care type...</option><option>Residential Care</option><option>Nursing Care</option><option>Dementia Care</option><option>Day Care</option><option>Domiciliary Care</option><option>Respite Care</option></select></div>
+            <div class="fgroup"><label>Resident's Age <span style="color:#e74c3c">*</span></label><input type="number" placeholder="e.g. 74" required data-ageCheck="true" aria-required="true" aria-label="Resident Age"></div>
+            <div class="fgroup"><label>Care Type Interested In <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Care Type"><option>Select care type...</option><option>Residential Care</option><option>Nursing Care</option><option>Dementia Care</option><option>Day Care</option><option>Domiciliary Care</option><option>Respite Care</option></select></div>
           </div>
-          <div class="fgroup"><label>Brief Description of Needs</label><textarea placeholder="Please briefly describe the care needs, any medical conditions, and when care is needed..."></textarea></div>
+          <div class="fgroup"><label>Brief Description of Needs <span style="color:#e74c3c">*</span></label><textarea placeholder="Please briefly describe the care needs, any medical conditions, and when care is needed..." required data-maxlength="500" aria-required="true" aria-label="Description of Needs"></textarea></div>
           <button class="btn-submit">Send Enquiry →</button>
         </div>
       </div>
@@ -602,24 +345,24 @@ footer{background:var(--charcoal);padding:4rem 7% 2rem}
         <p class="form-section-desc">A comprehensive care needs assessment is the first step. Our qualified assessor will evaluate your loved one's physical, emotional and social needs to create a tailored care plan.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Applicant's Full Name</label><input type="text" placeholder="Person needing assessment"></div>
-            <div class="fgroup"><label>Date of Birth</label><input type="date"></div>
+            <div class="fgroup"><label>Applicant's Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Person needing assessment" required aria-required="true" aria-label="Applicant Full Name"></div>
+            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Contact Person</label><input type="text" placeholder="Family contact name"></div>
-            <div class="fgroup"><label>Relationship</label><select><option>Select...</option><option>Son/Daughter</option><option>Spouse</option><option>Sibling</option><option>Social Worker</option><option>Other</option></select></div>
+            <div class="fgroup"><label>Contact Person <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Family contact name" required aria-required="true" aria-label="Contact Person Name"></div>
+            <div class="fgroup"><label>Relationship <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse</option><option>Sibling</option><option>Social Worker</option><option>Other</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Contact Phone</label><input type="tel" placeholder="+234 800 000 0000"></div>
-            <div class="fgroup"><label>Contact Email</label><input type="email" placeholder="contact@email.com"></div>
+            <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
+            <div class="fgroup"><label>Contact Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="contact@email.com" required aria-required="true" aria-label="Contact Email"></div>
           </div>
-          <div class="fgroup"><label>Current Living Situation</label><select><option>Select...</option><option>Living alone at home</option><option>Living with family</option><option>Currently in hospital</option><option>In another care facility</option></select></div>
-          <div class="fgroup"><label>Primary Health Conditions</label><textarea placeholder="e.g. Dementia, diabetes, limited mobility, post-stroke — list known health conditions..."></textarea></div>
+          <div class="fgroup"><label>Current Living Situation <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Living Situation"><option>Select...</option><option>Living alone at home</option><option>Living with family</option><option>Currently in hospital</option><option>In another care facility</option></select></div>
+          <div class="fgroup"><label>Primary Health Conditions <span style="color:#e74c3c">*</span></label><textarea placeholder="e.g. Dementia, diabetes, limited mobility, post-stroke — list known health conditions..." required data-maxlength="500" aria-required="true" aria-label="Health Conditions"></textarea></div>
           <div class="frow">
-            <div class="fgroup"><label>Preferred Assessment Date</label><input type="date"></div>
-            <div class="fgroup"><label>Preferred Time</label><select><option>Select...</option><option>Morning (8am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option></select></div>
+            <div class="fgroup"><label>Preferred Assessment Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Assessment Date"></div>
+            <div class="fgroup"><label>Preferred Time <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Preferred Time"><option>Select...</option><option>Morning (8am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option></select></div>
           </div>
-          <div class="fgroup"><label>Assessment Location</label><select><option>Select...</option><option>At applicant's home</option><option>At BunnyCare Hope Villa</option><option>At hospital</option></select></div>
+          <div class="fgroup"><label>Assessment Location <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Assessment Location"><option>Select...</option><option>At applicant's home</option><option>At BunnyCare Hope Villa</option><option>At hospital</option></select></div>
           <button class="btn-submit">Request Assessment →</button>
         </div>
       </div>
@@ -647,23 +390,23 @@ footer{background:var(--charcoal);padding:4rem 7% 2rem}
         <p class="form-section-desc">Schedule a medical consultation for a current resident or for a prospective resident prior to admission. Our visiting doctor holds regular clinics at Hope Villa.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Resident's Full Name</label><input type="text" placeholder="Full name of resident"></div>
-            <div class="fgroup"><label>Room / Bed Number</label><input type="text" placeholder="e.g. Room 4 or Prospective"></div>
+            <div class="fgroup"><label>Resident's Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name of resident" required aria-required="true" aria-label="Resident Full Name"></div>
+            <div class="fgroup"><label>Room / Bed Number</label><input type="text" placeholder="e.g. Room 4 or Prospective" aria-label="Room Number"></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Date of Birth</label><input type="date"></div>
-            <div class="fgroup"><label>Appointment Type</label><select><option>Select...</option><option>Routine check-up</option><option>Medication review</option><option>New symptom consultation</option><option>Specialist referral</option><option>Pre-admission medical</option><option>Mental health review</option></select></div>
+            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
+            <div class="fgroup"><label>Appointment Type <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Appointment Type"><option>Select...</option><option>Routine check-up</option><option>Medication review</option><option>New symptom consultation</option><option>Specialist referral</option><option>Pre-admission medical</option><option>Mental health review</option></select></div>
           </div>
-          <div class="fgroup"><label>Reason for Appointment</label><textarea placeholder="Briefly describe the reason for this appointment and any symptoms..."></textarea></div>
+          <div class="fgroup"><label>Reason for Appointment <span style="color:#e74c3c">*</span></label><textarea placeholder="Briefly describe the reason for this appointment and any symptoms..." required data-maxlength="300" aria-required="true" aria-label="Reason for Appointment"></textarea></div>
           <div class="frow">
-            <div class="fgroup"><label>Preferred Date</label><input type="date"></div>
-            <div class="fgroup"><label>Urgency Level</label><select><option>Routine (within 2 weeks)</option><option>Soon (within 3–5 days)</option><option>Urgent (within 24–48hrs)</option></select></div>
+            <div class="fgroup"><label>Preferred Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Date"></div>
+            <div class="fgroup"><label>Urgency Level <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Urgency Level"><option>Routine (within 2 weeks)</option><option>Soon (within 3–5 days)</option><option>Urgent (within 24–48hrs)</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Requested By</label><input type="text" placeholder="Name of requester"></div>
-            <div class="fgroup"><label>Relationship to Resident</label><select><option>Select...</option><option>Self (resident)</option><option>Family member</option><option>Care staff</option><option>Nurse</option></select></div>
+            <div class="fgroup"><label>Requested By <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Name of requester" required aria-required="true" aria-label="Requested By"></div>
+            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship to Resident"><option>Select...</option><option>Self (resident)</option><option>Family member</option><option>Care staff</option><option>Nurse</option></select></div>
           </div>
-          <div class="fgroup"><label>Contact Phone</label><input type="tel" placeholder="+234 800 000 0000"></div>
+          <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
           <button class="btn-submit">Book Appointment →</button>
         </div>
       </div>
@@ -691,23 +434,23 @@ footer{background:var(--charcoal);padding:4rem 7% 2rem}
         <p class="form-section-desc">Family are always welcome at BunnyCare. While no appointment is generally needed, filling in this form helps us prepare a warm welcome and ensure mealtimes are respected.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Your Full Name</label><input type="text" placeholder="Visitor's full name"></div>
-            <div class="fgroup"><label>Relationship to Resident</label><select><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Grandchild</option><option>Friend</option><option>Other</option></select></div>
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Visitor's full name" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Grandchild</option><option>Friend</option><option>Other</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Your Phone</label><input type="tel" placeholder="+234 800 000 0000"></div>
-            <div class="fgroup"><label>Your Email</label><input type="email" placeholder="you@email.com"></div>
+            <div class="fgroup"><label>Your Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Your Phone"></div>
+            <div class="fgroup"><label>Your Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="you@email.com" required aria-required="true" aria-label="Your Email"></div>
           </div>
-          <div class="fgroup"><label>Resident You Are Visiting</label><input type="text" placeholder="Full name of the resident"></div>
+          <div class="fgroup"><label>Resident You Are Visiting <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name of the resident" required aria-required="true" aria-label="Resident Name"></div>
           <div class="frow">
-            <div class="fgroup"><label>Proposed Visit Date</label><input type="date"></div>
-            <div class="fgroup"><label>Arrival Time</label><select><option>Select...</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
+            <div class="fgroup"><label>Proposed Visit Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Proposed Visit Date"></div>
+            <div class="fgroup"><label>Arrival Time <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Arrival Time"><option>Select...</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Number of Visitors</label><input type="number" placeholder="e.g. 3" min="1" max="10"></div>
-            <div class="fgroup"><label>Visit Duration (hours)</label><select><option>1 hour</option><option>2 hours</option><option>3 hours</option><option>Half day</option><option>Full day outing</option></select></div>
+            <div class="fgroup"><label>Number of Visitors <span style="color:#e74c3c">*</span></label><input type="number" placeholder="e.g. 3" min="1" max="10" required aria-required="true" aria-label="Number of Visitors"></div>
+            <div class="fgroup"><label>Visit Duration <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Visit Duration"><option>1 hour</option><option>2 hours</option><option>3 hours</option><option>Half day</option><option>Full day outing</option></select></div>
           </div>
-          <div class="fgroup"><label>Special Requests or Notes</label><textarea placeholder="e.g. bringing birthday cake, requesting a private room, bringing children, any special needs..."></textarea></div>
+          <div class="fgroup"><label>Special Requests or Notes</label><textarea placeholder="e.g. bringing birthday cake, requesting a private room, bringing children, any special needs..." data-maxlength="300" aria-label="Special Requests"></textarea></div>
           <button class="btn-submit">Submit Visit Request →</button>
         </div>
       </div>
@@ -747,12 +490,12 @@ footer{background:var(--charcoal);padding:4rem 7% 2rem}
           </div>
           <div class="fgroup" id="custom-input" style="display:none"><label>Enter Custom Amount (₦)</label><input type="number" placeholder="Enter amount in Naira" id="custom-amount-input"></div>
           <div class="frow">
-            <div class="fgroup"><label>Your Full Name</label><input type="text" placeholder="Full name"></div>
-            <div class="fgroup"><label>Phone Number</label><input type="tel" placeholder="+234 800 000 0000"></div>
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
           </div>
-          <div class="fgroup"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
-          <div class="fgroup"><label>Donation Purpose (Optional)</label><select><option>General care fund</option><option>Activities & events</option><option>Medical equipment</option><option>Dementia care programme</option><option>Therapy & rehabilitation</option><option>Staff training</option><option>Where needed most</option></select></div>
-          <div class="fgroup"><label>Personal Message (Optional)</label><textarea placeholder="Leave an encouraging message for our residents and team..."></textarea></div>
+          <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
+          <div class="fgroup"><label>Donation Purpose</label><select aria-label="Donation Purpose"><option>General care fund</option><option>Activities & events</option><option>Medical equipment</option><option>Dementia care programme</option><option>Therapy & rehabilitation</option><option>Staff training</option><option>Where needed most</option></select></div>
+          <div class="fgroup"><label>Personal Message (Optional)</label><textarea placeholder="Leave an encouraging message for our residents and team..." data-maxlength="300" aria-label="Personal Message"></textarea></div>
           <div class="fgroup" style="flex-direction:row;align-items:center;gap:10px">
             <input type="checkbox" id="anon" style="width:auto;margin:0">
             <label for="anon" style="text-transform:none;letter-spacing:0;font-size:0.83rem;color:rgba(255,255,255,0.5);margin:0">Make my donation anonymous</label>
@@ -822,12 +565,12 @@ footer{background:var(--charcoal);padding:4rem 7% 2rem}
     <div class="contact-form">
       <p style="font-size:0.9rem;color:var(--text);line-height:1.8;margin-bottom:1.5rem;font-weight:300">Our admissions and care team is available 7 days a week. We are here to answer your questions, arrange visits, and help you make the right decision for your loved one — with no pressure.</p>
       <div class="cf-row">
-        <div class="cf-group"><label>Full Name</label><input type="text" placeholder="Your name"></div>
-        <div class="cf-group"><label>Phone</label><input type="tel" placeholder="+234 800 000 0000"></div>
+        <div class="cf-group"><label>Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Your name" required aria-required="true" aria-label="Your Full Name"></div>
+        <div class="cf-group"><label>Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
       </div>
-      <div class="cf-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-      <div class="cf-group"><label>Subject</label><select><option>General enquiry</option><option>Care placement enquiry</option><option>Arrange a visit</option><option>Book an assessment</option><option>Feedback / complaint</option><option>Recruitment</option><option>Donation</option></select></div>
-      <div class="cf-group"><label>Message</label><textarea placeholder="How can we help you?"></textarea></div>
+      <div class="cf-group"><label>Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
+      <div class="cf-group"><label>Subject <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Subject"><option>General enquiry</option><option>Care placement enquiry</option><option>Arrange a visit</option><option>Book an assessment</option><option>Feedback / complaint</option><option>Recruitment</option><option>Donation</option></select></div>
+      <div class="cf-group"><label>Message <span style="color:#e74c3c">*</span></label><textarea placeholder="How can we help you?" required data-maxlength="500" aria-required="true" aria-label="Your Message"></textarea></div>
       <button class="btn-green" style="width:100%;padding:15px">Send Message →</button>
     </div>
     <div class="contact-info">
@@ -927,6 +670,7 @@ footer{background:var(--charcoal);padding:4rem 7% 2rem}
   </div>
 </footer>
 
+<script src="form-handler.js"></script>
 <script>
 function openTab(name) {
   // Update tabs
@@ -940,6 +684,13 @@ function openTab(name) {
   });
   // Scroll to applications section
   document.getElementById('applications').scrollIntoView({behavior:'smooth', block:'start'});
+  
+  // Reinitialize form handlers for this panel
+  setTimeout(() => {
+    if (FormHandler && FormHandler.setupAllForms) {
+      FormHandler.setupAllForms();
+    }
+  }, 100);
 }
 
 function selectAmount(el, val) {
