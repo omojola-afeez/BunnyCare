@@ -306,20 +306,20 @@
         <p class="form-section-desc">Tell us about your loved one's needs and we will get back to you within 24 hours with personalised information and next steps.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="e.g. Chioma Obi" required aria-required="true" aria-label="Your Full Name"></div>
-            <div class="fgroup"><label>Your Relationship <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Your Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Self</option><option>Other</option></select></div>
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="fullName" placeholder="e.g. Chioma Obi" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Your Relationship <span style="color:#e74c3c">*</span></label><select name="relationship" required aria-required="true" aria-label="Your Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Self</option><option>Other</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
-            <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" placeholder="you@email.com" required aria-required="true" aria-label="Email Address"></div>
+            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" name="phone" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
+            <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" name="email" placeholder="you@email.com" required aria-required="true" aria-label="Email Address"></div>
           </div>
-          <div class="fgroup"><label>Resident's Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Name of the person needing care" required aria-required="true" aria-label="Resident Name"></div>
+          <div class="fgroup"><label>Resident's Name <span style="color:#e74c3c">*</span></label><input type="text" name="residentName" placeholder="Name of the person needing care" required aria-required="true" aria-label="Resident Name"></div>
           <div class="frow">
-            <div class="fgroup"><label>Resident's Age <span style="color:#e74c3c">*</span></label><input type="number" placeholder="e.g. 74" required data-ageCheck="true" aria-required="true" aria-label="Resident Age"></div>
-            <div class="fgroup"><label>Care Type Interested In <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Care Type"><option>Select care type...</option><option>Residential Care</option><option>Nursing Care</option><option>Dementia Care</option><option>Day Care</option><option>Domiciliary Care</option><option>Respite Care</option></select></div>
+            <div class="fgroup"><label>Resident's Age <span style="color:#e74c3c">*</span></label><input type="number" name="age" placeholder="e.g. 74" required data-ageCheck="true" aria-required="true" aria-label="Resident Age"></div>
+            <div class="fgroup"><label>Care Type Interested In <span style="color:#e74c3c">*</span></label><select name="careType" required aria-required="true" aria-label="Care Type"><option>Select care type...</option><option>Residential Care</option><option>Nursing Care</option><option>Dementia Care</option><option>Day Care</option><option>Domiciliary Care</option><option>Respite Care</option></select></div>
           </div>
-          <div class="fgroup"><label>Brief Description of Needs <span style="color:#e74c3c">*</span></label><textarea placeholder="Please briefly describe the care needs, any medical conditions, and when care is needed..." required data-maxlength="500" aria-required="true" aria-label="Description of Needs"></textarea></div>
-          <button class="btn-submit">Send Enquiry →</button>
+          <div class="fgroup"><label>Brief Description of Needs <span style="color:#e74c3c">*</span></label><textarea name="description" placeholder="Please briefly describe the care needs, any medical conditions, and when care is needed..." required data-maxlength="500" aria-required="true" aria-label="Description of Needs"></textarea></div>
+          <button type="button" class="btn-submit">Send Enquiry →</button>
         </div>
       </div>
       <div class="app-info-panel">
@@ -345,25 +345,25 @@
         <p class="form-section-desc">A comprehensive care needs assessment is the first step. Our qualified assessor will evaluate your loved one's physical, emotional and social needs to create a tailored care plan.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Applicant's Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Person needing assessment" required aria-required="true" aria-label="Applicant Full Name"></div>
-            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
+            <div class="fgroup"><label>Applicant's Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="applicantName" placeholder="Person needing assessment" required aria-required="true" aria-label="Applicant Full Name"></div>
+            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" name="dob" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Contact Person <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Family contact name" required aria-required="true" aria-label="Contact Person Name"></div>
-            <div class="fgroup"><label>Relationship <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse</option><option>Sibling</option><option>Social Worker</option><option>Other</option></select></div>
+            <div class="fgroup"><label>Contact Person <span style="color:#e74c3c">*</span></label><input type="text" name="contactPerson" placeholder="Family contact name" required aria-required="true" aria-label="Contact Person Name"></div>
+            <div class="fgroup"><label>Relationship <span style="color:#e74c3c">*</span></label><select name="contactRelationship" required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse</option><option>Sibling</option><option>Social Worker</option><option>Other</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
-            <div class="fgroup"><label>Contact Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="contact@email.com" required aria-required="true" aria-label="Contact Email"></div>
+            <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" name="contactPhone" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
+            <div class="fgroup"><label>Contact Email <span style="color:#e74c3c">*</span></label><input type="email" name="contactEmail" placeholder="contact@email.com" required aria-required="true" aria-label="Contact Email"></div>
           </div>
-          <div class="fgroup"><label>Current Living Situation <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Living Situation"><option>Select...</option><option>Living alone at home</option><option>Living with family</option><option>Currently in hospital</option><option>In another care facility</option></select></div>
-          <div class="fgroup"><label>Primary Health Conditions <span style="color:#e74c3c">*</span></label><textarea placeholder="e.g. Dementia, diabetes, limited mobility, post-stroke — list known health conditions..." required data-maxlength="500" aria-required="true" aria-label="Health Conditions"></textarea></div>
+          <div class="fgroup"><label>Current Living Situation <span style="color:#e74c3c">*</span></label><select name="livingSituation" required aria-required="true" aria-label="Living Situation"><option>Select...</option><option>Living alone at home</option><option>Living with family</option><option>Currently in hospital</option><option>In another care facility</option></select></div>
+          <div class="fgroup"><label>Primary Health Conditions <span style="color:#e74c3c">*</span></label><textarea name="healthConditions" placeholder="e.g. Dementia, diabetes, limited mobility, post-stroke — list known health conditions..." required data-maxlength="500" aria-required="true" aria-label="Health Conditions"></textarea></div>
           <div class="frow">
-            <div class="fgroup"><label>Preferred Assessment Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Assessment Date"></div>
-            <div class="fgroup"><label>Preferred Time <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Preferred Time"><option>Select...</option><option>Morning (8am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option></select></div>
+            <div class="fgroup"><label>Preferred Assessment Date <span style="color:#e74c3c">*</span></label><input type="date" name="assessmentDate" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Assessment Date"></div>
+            <div class="fgroup"><label>Preferred Time <span style="color:#e74c3c">*</span></label><select name="assessmentTime" required aria-required="true" aria-label="Preferred Time"><option>Select...</option><option>Morning (8am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option></select></div>
           </div>
-          <div class="fgroup"><label>Assessment Location <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Assessment Location"><option>Select...</option><option>At applicant's home</option><option>At BunnyCare Hope Villa</option><option>At hospital</option></select></div>
-          <button class="btn-submit">Request Assessment →</button>
+          <div class="fgroup"><label>Assessment Location <span style="color:#e74c3c">*</span></label><select name="assessmentLocation" required aria-required="true" aria-label="Assessment Location"><option>Select...</option><option>At applicant's home</option><option>At BunnyCare Hope Villa</option><option>At hospital</option></select></div>
+          <button type="button" class="btn-submit">Request Assessment →</button>
         </div>
       </div>
       <div class="app-info-panel">
@@ -390,24 +390,24 @@
         <p class="form-section-desc">Schedule a medical consultation for a current resident or for a prospective resident prior to admission. Our visiting doctor holds regular clinics at Hope Villa.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Resident's Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name of resident" required aria-required="true" aria-label="Resident Full Name"></div>
-            <div class="fgroup"><label>Room / Bed Number</label><input type="text" placeholder="e.g. Room 4 or Prospective" aria-label="Room Number"></div>
+            <div class="fgroup"><label>Resident's Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="doctorResidentName" placeholder="Full name of resident" required aria-required="true" aria-label="Resident Full Name"></div>
+            <div class="fgroup"><label>Room / Bed Number</label><input type="text" name="roomNumber" placeholder="e.g. Room 4 or Prospective" aria-label="Room Number"></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
-            <div class="fgroup"><label>Appointment Type <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Appointment Type"><option>Select...</option><option>Routine check-up</option><option>Medication review</option><option>New symptom consultation</option><option>Specialist referral</option><option>Pre-admission medical</option><option>Mental health review</option></select></div>
+            <div class="fgroup"><label>Date of Birth <span style="color:#e74c3c">*</span></label><input type="date" name="doctorDob" required data-ageCheck="true" aria-required="true" aria-label="Date of Birth"></div>
+            <div class="fgroup"><label>Appointment Type <span style="color:#e74c3c">*</span></label><select name="appointmentType" required aria-required="true" aria-label="Appointment Type"><option>Select...</option><option>Routine check-up</option><option>Medication review</option><option>New symptom consultation</option><option>Specialist referral</option><option>Pre-admission medical</option><option>Mental health review</option></select></div>
           </div>
-          <div class="fgroup"><label>Reason for Appointment <span style="color:#e74c3c">*</span></label><textarea placeholder="Briefly describe the reason for this appointment and any symptoms..." required data-maxlength="300" aria-required="true" aria-label="Reason for Appointment"></textarea></div>
+          <div class="fgroup"><label>Reason for Appointment <span style="color:#e74c3c">*</span></label><textarea name="appointmentReason" placeholder="Briefly describe the reason for this appointment and any symptoms..." required data-maxlength="300" aria-required="true" aria-label="Reason for Appointment"></textarea></div>
           <div class="frow">
-            <div class="fgroup"><label>Preferred Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Date"></div>
-            <div class="fgroup"><label>Urgency Level <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Urgency Level"><option>Routine (within 2 weeks)</option><option>Soon (within 3–5 days)</option><option>Urgent (within 24–48hrs)</option></select></div>
+            <div class="fgroup"><label>Preferred Date <span style="color:#e74c3c">*</span></label><input type="date" name="appointmentDate" required data-futureDateCheck="true" aria-required="true" aria-label="Preferred Date"></div>
+            <div class="fgroup"><label>Urgency Level <span style="color:#e74c3c">*</span></label><select name="urgency" required aria-required="true" aria-label="Urgency Level"><option>Routine (within 2 weeks)</option><option>Soon (within 3–5 days)</option><option>Urgent (within 24–48hrs)</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Requested By <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Name of requester" required aria-required="true" aria-label="Requested By"></div>
-            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship to Resident"><option>Select...</option><option>Self (resident)</option><option>Family member</option><option>Care staff</option><option>Nurse</option></select></div>
+            <div class="fgroup"><label>Requested By <span style="color:#e74c3c">*</span></label><input type="text" name="requestedBy" placeholder="Name of requester" required aria-required="true" aria-label="Requested By"></div>
+            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select name="requesterRelationship" required aria-required="true" aria-label="Relationship to Resident"><option>Select...</option><option>Self (resident)</option><option>Family member</option><option>Care staff</option><option>Nurse</option></select></div>
           </div>
-          <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
-          <button class="btn-submit">Book Appointment →</button>
+          <div class="fgroup"><label>Contact Phone <span style="color:#e74c3c">*</span></label><input type="tel" name="doctorContactPhone" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Contact Phone"></div>
+          <button type="button" class="btn-submit">Book Appointment →</button>
         </div>
       </div>
       <div class="app-info-panel">
@@ -434,24 +434,24 @@
         <p class="form-section-desc">Family are always welcome at BunnyCare. While no appointment is generally needed, filling in this form helps us prepare a warm welcome and ensure mealtimes are respected.</p>
         <div class="form-fields">
           <div class="frow">
-            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Visitor's full name" required aria-required="true" aria-label="Your Full Name"></div>
-            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Grandchild</option><option>Friend</option><option>Other</option></select></div>
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="visitorName" placeholder="Visitor's full name" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Relationship to Resident <span style="color:#e74c3c">*</span></label><select name="visitorRelationship" required aria-required="true" aria-label="Relationship"><option>Select...</option><option>Son/Daughter</option><option>Spouse/Partner</option><option>Sibling</option><option>Grandchild</option><option>Friend</option><option>Other</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Your Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Your Phone"></div>
-            <div class="fgroup"><label>Your Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="you@email.com" required aria-required="true" aria-label="Your Email"></div>
+            <div class="fgroup"><label>Your Phone <span style="color:#e74c3c">*</span></label><input type="tel" name="visitorPhone" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Your Phone"></div>
+            <div class="fgroup"><label>Your Email <span style="color:#e74c3c">*</span></label><input type="email" name="visitorEmail" placeholder="you@email.com" required aria-required="true" aria-label="Your Email"></div>
           </div>
-          <div class="fgroup"><label>Resident You Are Visiting <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name of the resident" required aria-required="true" aria-label="Resident Name"></div>
+          <div class="fgroup"><label>Resident You Are Visiting <span style="color:#e74c3c">*</span></label><input type="text" name="visitResidentName" placeholder="Full name of the resident" required aria-required="true" aria-label="Resident Name"></div>
           <div class="frow">
-            <div class="fgroup"><label>Proposed Visit Date <span style="color:#e74c3c">*</span></label><input type="date" required data-futureDateCheck="true" aria-required="true" aria-label="Proposed Visit Date"></div>
-            <div class="fgroup"><label>Arrival Time <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Arrival Time"><option>Select...</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
+            <div class="fgroup"><label>Proposed Visit Date <span style="color:#e74c3c">*</span></label><input type="date" name="visitDate" required data-futureDateCheck="true" aria-required="true" aria-label="Proposed Visit Date"></div>
+            <div class="fgroup"><label>Arrival Time <span style="color:#e74c3c">*</span></label><select name="arrivalTime" required aria-required="true" aria-label="Arrival Time"><option>Select...</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
           </div>
           <div class="frow">
-            <div class="fgroup"><label>Number of Visitors <span style="color:#e74c3c">*</span></label><input type="number" placeholder="e.g. 3" min="1" max="10" required aria-required="true" aria-label="Number of Visitors"></div>
-            <div class="fgroup"><label>Visit Duration <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Visit Duration"><option>1 hour</option><option>2 hours</option><option>3 hours</option><option>Half day</option><option>Full day outing</option></select></div>
+            <div class="fgroup"><label>Number of Visitors <span style="color:#e74c3c">*</span></label><input type="number" name="numVisitors" placeholder="e.g. 3" min="1" max="10" required aria-required="true" aria-label="Number of Visitors"></div>
+            <div class="fgroup"><label>Visit Duration <span style="color:#e74c3c">*</span></label><select name="visitDuration" required aria-required="true" aria-label="Visit Duration"><option>1 hour</option><option>2 hours</option><option>3 hours</option><option>Half day</option><option>Full day outing</option></select></div>
           </div>
-          <div class="fgroup"><label>Special Requests or Notes</label><textarea placeholder="e.g. bringing birthday cake, requesting a private room, bringing children, any special needs..." data-maxlength="300" aria-label="Special Requests"></textarea></div>
-          <button class="btn-submit">Submit Visit Request →</button>
+          <div class="fgroup"><label>Special Requests or Notes</label><textarea name="visitNotes" placeholder="e.g. bringing birthday cake, requesting a private room, bringing children, any special needs..." data-maxlength="300" aria-label="Special Requests"></textarea></div>
+          <button type="button" class="btn-submit">Submit Visit Request →</button>
         </div>
       </div>
       <div class="app-info-panel">
@@ -490,17 +490,17 @@
           </div>
           <div class="fgroup" id="custom-input" style="display:none"><label>Enter Custom Amount (₦)</label><input type="number" placeholder="Enter amount in Naira" id="custom-amount-input"></div>
           <div class="frow">
-            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Full name" required aria-required="true" aria-label="Your Full Name"></div>
-            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
+            <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="donorName" placeholder="Full name" required aria-required="true" aria-label="Your Full Name"></div>
+            <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" name="donorPhone" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
           </div>
-          <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
-          <div class="fgroup"><label>Donation Purpose</label><select aria-label="Donation Purpose"><option>General care fund</option><option>Activities & events</option><option>Medical equipment</option><option>Dementia care programme</option><option>Therapy & rehabilitation</option><option>Staff training</option><option>Where needed most</option></select></div>
-          <div class="fgroup"><label>Personal Message (Optional)</label><textarea placeholder="Leave an encouraging message for our residents and team..." data-maxlength="300" aria-label="Personal Message"></textarea></div>
+          <div class="fgroup"><label>Email Address <span style="color:#e74c3c">*</span></label><input type="email" name="donorEmail" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
+          <div class="fgroup"><label>Donation Purpose</label><select name="donationPurpose" aria-label="Donation Purpose"><option>General care fund</option><option>Activities & events</option><option>Medical equipment</option><option>Dementia care programme</option><option>Therapy & rehabilitation</option><option>Staff training</option><option>Where needed most</option></select></div>
+          <div class="fgroup"><label>Personal Message (Optional)</label><textarea name="donorMessage" placeholder="Leave an encouraging message for our residents and team..." data-maxlength="300" aria-label="Personal Message"></textarea></div>
           <div class="fgroup" style="flex-direction:row;align-items:center;gap:10px">
             <input type="checkbox" id="anon" style="width:auto;margin:0">
             <label for="anon" style="text-transform:none;letter-spacing:0;font-size:0.83rem;color:rgba(255,255,255,0.5);margin:0">Make my donation anonymous</label>
           </div>
-          <button class="btn-submit">Proceed to Payment →</button>
+          <button type="button" class="btn-submit">Proceed to Payment →</button>
         </div>
       </div>
       <div>
@@ -565,12 +565,12 @@
     <div class="contact-form">
       <p style="font-size:0.9rem;color:var(--text);line-height:1.8;margin-bottom:1.5rem;font-weight:300">Our admissions and care team is available 7 days a week. We are here to answer your questions, arrange visits, and help you make the right decision for your loved one — with no pressure.</p>
       <div class="cf-row">
-        <div class="cf-group"><label>Full Name <span style="color:#e74c3c">*</span></label><input type="text" placeholder="Your name" required aria-required="true" aria-label="Your Full Name"></div>
-        <div class="cf-group"><label>Phone <span style="color:#e74c3c">*</span></label><input type="tel" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
+        <div class="cf-group"><label>Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="contactName" placeholder="Your name" required aria-required="true" aria-label="Your Full Name"></div>
+        <div class="cf-group"><label>Phone <span style="color:#e74c3c">*</span></label><input type="tel" name="contactPhone" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
       </div>
-      <div class="cf-group"><label>Email <span style="color:#e74c3c">*</span></label><input type="email" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
-      <div class="cf-group"><label>Subject <span style="color:#e74c3c">*</span></label><select required aria-required="true" aria-label="Subject"><option>General enquiry</option><option>Care placement enquiry</option><option>Arrange a visit</option><option>Book an assessment</option><option>Feedback / complaint</option><option>Recruitment</option><option>Donation</option></select></div>
-      <div class="cf-group"><label>Message <span style="color:#e74c3c">*</span></label><textarea placeholder="How can we help you?" required data-maxlength="500" aria-required="true" aria-label="Your Message"></textarea></div>
+      <div class="cf-group"><label>Email <span style="color:#e74c3c">*</span></label><input type="email" name="contactEmail" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
+      <div class="cf-group"><label>Subject <span style="color:#e74c3c">*</span></label><select name="subject" required aria-required="true" aria-label="Subject"><option>General enquiry</option><option>Care placement enquiry</option><option>Arrange a visit</option><option>Book an assessment</option><option>Feedback / complaint</option><option>Recruitment</option><option>Donation</option></select></div>
+      <div class="cf-group"><label>Message <span style="color:#e74c3c">*</span></label><textarea name="message" placeholder="How can we help you?" required data-maxlength="500" aria-required="true" aria-label="Your Message"></textarea></div>
       <button class="btn-green" style="width:100%;padding:15px">Send Message →</button>
     </div>
     <div class="contact-info">

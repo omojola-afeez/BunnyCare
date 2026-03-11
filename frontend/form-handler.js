@@ -34,14 +34,21 @@ const FormHandler = {
     email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
     phone: (value) => /^[\d\s\-\+()]+$/.test(value) && value.replace(/\D/g, '').length >= 10,
     age: (value) => {
-      const today = new Date();
-      const birthDate = new Date(value);
-      let age = today.getFullYear() - birthDate.getFullYear();
-      const monthDiff = today.getMonth() - birthDate.getMonth();
-      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
+      // Handle both number input (direct age) and date input (date of birth)
+      if (isNaN(value)) {
+        // Date of birth input
+        const today = new Date();
+        const birthDate = new Date(value);
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+        return age >= 60;
+      } else {
+        // Direct age number input
+        return parseInt(value) >= 60;
       }
-      return age >= 60;
     },
     futureDate: (value) => new Date(value) > new Date(),
     minLength: (value, length) => value.toString().length >= length,
@@ -426,6 +433,10 @@ const FormHandler = {
         if (input.dataset.futureDateCheck === 'true' && !this.validators.futureDate(value)) {
           errors[fieldName] = 'Date cannot be in the past';
         }
+      } else if (input.type === 'number' && input.dataset.ageCheck === 'true') {
+        if (!this.validators.age(value)) {
+          errors[fieldName] = 'Resident must be 60 years or older';
+        }
       } else if (input.dataset.minLength) {
         if (!this.validators.minLength(value, parseInt(input.dataset.minLength))) {
           errors[fieldName] = `Minimum ${input.dataset.minLength} characters required`;
@@ -534,36 +545,7 @@ const FormHandler = {
     }
   },
 
-  // Setup conditional field visibility
-  setupConditionalFields() {
-    const triggers = document.querySelectorAll('[data-conditional-trigger], [data-trigger]');
-    triggers.forEach(trigger => {
-      trigger.addEventListener('change', (e) => {
-        // New system: data-conditional-trigger
-        if (trigger.hasAttribute('data-conditional-trigger')) {
-          const targetSelector = trigger.dataset.conditionalTarget;
-          const condition = trigger.dataset.conditionalValue;
-          
-          const targets = document.querySelectorAll(targetSelector);
-          targets.forEach(target => {
-            const shouldShow = (trigger.type === 'checkbox' && trigger.checked) ||
-                             (trigger.type === 'select-one' && trigger.value === condition) ||
-                             (trigger.type === 'radio' && trigger.checked && trigger.value === condition);
-            
-            target.style.display = shouldShow ? 'flex' : 'none';
-          });
-        }
-        
-        // Legacy system: data-trigger
-        if (trigger.hasAttribute('data-trigger')) {
-          const targetField = document.querySelector(`[data-condition="${trigger.dataset.trigger}"]`);
-          if (targetField) {
-            targetField.style.display = trigger.checked || trigger.value ? 'flex' : 'none';
-          }
-        }
-      });
-    });
-  },
+
 
   // Setup character counters
   setupCharacterCounters() {
@@ -639,6 +621,30 @@ const FormHandler = {
               this.clearFieldError(input);
             }
           }
+          if (input.dataset.futureDateCheck === 'true') {
+            const valid = this.validators.futureDate(input.value);
+            if (input.value && !valid) {
+              input.style.borderColor = '#f39c12';
+              this.showFieldError(input, 'Please select a future date');
+            } else {
+              input.style.borderColor = '';
+              this.clearFieldError(input);
+            }
+          }
+        });
+      }
+
+      // Number field age validation
+      if (input.type === 'number' && input.dataset.ageCheck === 'true') {
+        input.addEventListener('change', () => {
+          const valid = this.validators.age(input.value);
+          if (input.value && !valid) {
+            input.style.borderColor = '#f39c12';
+            this.showFieldError(input, 'Resident must be 60 or older');
+          } else {
+            input.style.borderColor = '';
+            this.clearFieldError(input);
+          }
         });
       }
     });
@@ -660,24 +666,6 @@ const FormHandler = {
     }
 
     input.value = formatted;
-  },
-
-  // Show field-level error
-  showFieldError(input, message) {
-    const existing = input.parentElement.querySelector('.field-error-hint');
-    if (existing) existing.remove();
-
-    const hint = document.createElement('div');
-    hint.className = 'field-error-hint';
-    hint.style.cssText = 'color:#f39c12;font-size:0.7rem;margin-top:0.25rem;';
-    hint.textContent = message;
-    input.parentElement.appendChild(hint);
-  },
-
-  // Clear field error
-  clearFieldError(input) {
-    const hint = input.parentElement.querySelector('.field-error-hint');
-    if (hint) hint.remove();
   }
 };
 
