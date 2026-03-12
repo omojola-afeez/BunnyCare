@@ -407,9 +407,20 @@ const FormHandler = {
   validateForm(form) {
     const errors = {};
     const inputs = form.querySelectorAll('input, select, textarea');
+    const formId = form.id ? form.id.replace('panel-', '') : '';
 
     inputs.forEach(input => {
-      if (input.style.display === 'none') return;
+      // Skip hidden fields and custom amount input (unless it's visible and selected)
+      if (input.style.display === 'none' || input.type === 'hidden') {
+        // Special case: if donation amount is the selected value
+        if (input.type === 'hidden' && input.id === 'donation-amount-input' && formId === 'donation') {
+          const value = input.value.toString().trim();
+          if (!value) {
+            errors['donationAmount'] = 'Please select a donation amount';
+          }
+        }
+        return;
+      }
 
       const fieldName = input.name || input.id || input.placeholder;
       const value = (input.type === 'checkbox' ? input.checked : input.value).toString().trim();

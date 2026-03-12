@@ -488,7 +488,8 @@
               <div class="d-amount" onclick="selectAmount(this, 'custom')" id="custom-btn">Custom Amount</div>
             </div>
           </div>
-          <div class="fgroup" id="custom-input" style="display:none"><label>Enter Custom Amount (₦)</label><input type="number" placeholder="Enter amount in Naira" id="custom-amount-input"></div>
+          <div class="fgroup" id="custom-input" style="display:none"><label>Enter Custom Amount (₦)</label><input type="number" placeholder="Enter amount in Naira" id="custom-amount-input" name="customAmount"></div>
+          <input type="hidden" name="donationAmount" id="donation-amount-input" value="">
           <div class="frow">
             <div class="fgroup"><label>Your Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="donorName" placeholder="Full name" required aria-required="true" aria-label="Your Full Name"></div>
             <div class="fgroup"><label>Phone Number <span style="color:#e74c3c">*</span></label><input type="tel" name="donorPhone" placeholder="+234 800 000 0000" required aria-required="true" aria-label="Phone Number"></div>
@@ -562,7 +563,7 @@
   <div class="sec-tag">Contact Us</div>
   <h2 class="sec-title">Get in Touch — We're <em>Here for You</em></h2>
   <div class="contact-grid">
-    <div class="contact-form">
+    <div class="contact-form" id="panel-contact">
       <p style="font-size:0.9rem;color:var(--text);line-height:1.8;margin-bottom:1.5rem;font-weight:300">Our admissions and care team is available 7 days a week. We are here to answer your questions, arrange visits, and help you make the right decision for your loved one — with no pressure.</p>
       <div class="cf-row">
         <div class="cf-group"><label>Full Name <span style="color:#e74c3c">*</span></label><input type="text" name="contactName" placeholder="Your name" required aria-required="true" aria-label="Your Full Name"></div>
@@ -571,7 +572,7 @@
       <div class="cf-group"><label>Email <span style="color:#e74c3c">*</span></label><input type="email" name="contactEmail" placeholder="your@email.com" required aria-required="true" aria-label="Email Address"></div>
       <div class="cf-group"><label>Subject <span style="color:#e74c3c">*</span></label><select name="subject" required aria-required="true" aria-label="Subject"><option>General enquiry</option><option>Care placement enquiry</option><option>Arrange a visit</option><option>Book an assessment</option><option>Feedback / complaint</option><option>Recruitment</option><option>Donation</option></select></div>
       <div class="cf-group"><label>Message <span style="color:#e74c3c">*</span></label><textarea name="message" placeholder="How can we help you?" required data-maxlength="500" aria-required="true" aria-label="Your Message"></textarea></div>
-      <button class="btn-submit" style="width:100%;padding:15px">Send Message →</button>
+      <button type="button" class="btn-submit" style="width:100%;padding:15px">Send Message →</button>
     </div>
     <div class="contact-info">
       <div class="ci-item">
@@ -697,7 +698,19 @@ function selectAmount(el, val) {
   document.querySelectorAll('.d-amount').forEach(d => d.classList.remove('selected'));
   el.classList.add('selected');
   const customInput = document.getElementById('custom-input');
-  customInput.style.display = val === 'custom' ? 'flex' : 'none';
+  const amountInput = document.getElementById('donation-amount-input');
+  
+  if (val === 'custom') {
+    customInput.style.display = 'flex';
+    amountInput.value = '';
+    // Re-initialize form handlers when custom amount is selected
+    setTimeout(() => FormHandler && FormHandler.setupAllForms && FormHandler.setupAllForms(), 100);
+  } else {
+    customInput.style.display = 'none';
+    amountInput.value = val;
+    // Re-initialize form handlers when amount is selected
+    setTimeout(() => FormHandler && FormHandler.setupAllForms && FormHandler.setupAllForms(), 100);
+  }
 }
 
 // Smooth nav link behaviour
