@@ -265,7 +265,7 @@ const FormHandler = {
 
   // Setup all form event listeners
   setupAllForms() {
-    const forms = document.querySelectorAll('[id^="panel-"]');
+    const forms = document.querySelectorAll('[id^="panel-"], .contact-form');
     forms.forEach(form => {
       const submitBtn = form.querySelector('.btn-submit');
       if (submitBtn) {
